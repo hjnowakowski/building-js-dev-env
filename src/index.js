@@ -1,5 +1,7 @@
-import {getUsers} from './api/userApi';
 import './index.css';
+
+import {getUsers} from './api/userApi';
+
 
 getUsers().then(result => {
   let usersBody = "";
@@ -15,5 +17,4 @@ getUsers().then(result => {
   });
 
   global.document.getElementById('users').innerHTML = usersBody;
-
-  });
+});
